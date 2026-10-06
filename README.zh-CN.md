@@ -57,7 +57,7 @@ Typio，意为 typo 的终点。
 
 ## 安装
 
-对于普通用户，请下载并运行 `typio-<version>.pkg`，然后在“系统设置 → 键盘 → 输入法”中启用 Typio。
+对于普通用户，请下载并运行 `Typio-<version>.pkg`，然后在“系统设置 → 键盘 → 输入法”中启用 Typio。
 
 <div align="center">
   <img src="resources/images/readme/install-guide-1.png" alt="Allow applications from App Store & Known Developers" height="300" />
@@ -65,11 +65,13 @@ Typio，意为 typo 的终点。
   <img src="resources/images/readme/install-guide-2.png" alt="Open typio-1.0.pkg anyway" height="300" />
 </div>
 
-大多数情况下无需注销。如果 Typio 没有立即出现，可先移除并重新添加一次输入源；仍未显示时，再执行一次注销并重新登录。
+Typio 1.1.2 恢复原来的单输入源结构，菜单栏和行内切换器统一使用圆形底、内部镂空 T 的图标，颜色由系统根据外观和选中状态调整。1.1.1 的 input mode 配置在后续重启中暴露了切换问题，已移除。
+
+从 1.1.1 更新时，请在输入法列表中移除旧 Typio，再添加 Typio。若旧条目或图标仍未刷新，请注销并重新登录或重启 macOS。
 
 ## 构建与打包
 
-使用 `sh scripts/build.sh` 构建应用，`sh scripts/build-and-install.sh` 用于本地开发安装，`sh scripts/package-pkg.sh` 生成安装包 `dist/typio-<version>.pkg`。
+使用 `bash scripts/build.sh` 构建应用，`bash scripts/build-and-install.sh` 用于本地开发安装，`bash scripts/package-pkg.sh` 生成安装包 `dist/Typio-<version>.pkg`。
 
 如果需要安装包签名，请在打包前设置 `INSTALLER_SIGN_IDENTITY`。
 
@@ -80,3 +82,9 @@ Typio 是为社区构建的。如果您觉得它有帮助，请考虑在我的[�
 ## 项目
 
 项目主页：https://github.com/howtoexitvim/Typio
+
+## License and credits
+
+Typio is a modified version of [HallelujahIM](https://github.com/dongyuwei/hallelujahIM) by Dong Yuwei and contributors, released under [GNU GPL v3](LICENSE). Typio modifications by Shuqi Wang, 2026, include the local-only engine, native settings, candidate panel layouts, branding, input-source icons, and installation flow.
+
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for dependency licenses and dictionary provenance, and [BUILDING.md](BUILDING.md) for building from source.

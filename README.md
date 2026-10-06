@@ -57,7 +57,7 @@ Typio means the end of typo.
 
 ## Install
 
-For end users, download and run `typio-<version>.pkg`, then enable Typio in System Settings → Keyboard → Input Sources.
+For end users, download and run `Typio-<version>.pkg`, then enable Typio in System Settings → Keyboard → Input Sources.
 
 <div align="center">
   <img src="resources/images/readme/install-guide-1.png" alt="Allow applications from App Store & Known Developers" height="300" />
@@ -65,11 +65,13 @@ For end users, download and run `typio-<version>.pkg`, then enable Typio in Syst
   <img src="resources/images/readme/install-guide-2.png" alt="Open typio-1.0.pkg anyway" height="300" />
 </div>
 
-In most cases, logout is not required. If Typio does not appear immediately, remove and add the source once. If it still does not show, log out and log back in.
+Typio 1.1.2 restores the original single input source and uses a circular icon with a T cutout in both the menu bar and inline switcher. The system adjusts the icon color for appearance and selection. The input-mode configuration introduced in 1.1.1 has been removed after a later restart exposed switching problems.
+
+When updating from 1.1.1, remove the old Typio entry and add Typio again in Input Sources. If the old entry or icon persists, log out and back in or restart macOS.
 
 ## Build and Package
 
-Use `sh scripts/build.sh` to build the app, `sh scripts/build-and-install.sh` for local developer install, and `sh scripts/package-pkg.sh` to generate the installer package at `dist/typio-<version>.pkg`.
+Use `bash scripts/build.sh` to build the app, `bash scripts/build-and-install.sh` for local developer install, and `bash scripts/package-pkg.sh` to generate the installer package at `dist/Typio-<version>.pkg`.
 
 If you need installer signing, set `INSTALLER_SIGN_IDENTITY` before packaging.
 
@@ -80,3 +82,9 @@ Typio is built for the community. If you find it helpful, please consider suppor
 ## About
 
 Project home: https://github.com/howtoexitvim/Typio
+
+## License and credits
+
+Typio is a modified version of [HallelujahIM](https://github.com/dongyuwei/hallelujahIM) by Dong Yuwei and contributors, released under [GNU GPL v3](LICENSE). Typio modifications by Shuqi Wang, 2026, include the local-only engine, native settings, candidate panel layouts, branding, input-source icons, and installation flow.
+
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for dependency licenses and dictionary provenance, and [BUILDING.md](BUILDING.md) for building from source.

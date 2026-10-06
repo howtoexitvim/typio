@@ -1,0 +1,23 @@
+name: Build and test
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install icon test dependency
+        run: python -m pip install Pillow
+      - name: Test shipped icons
+        run: python -m unittest discover -s tests -v
+      - name: Rebuild universal marisa library and dictionary tools
+        run: bash scripts/build-marisa.sh
+      - name: Build both Mac architectures
+        run: >-
+          xcodebuild -workspace typio.xcworkspace -scheme typio
+          -configuration Release -destination 'generic/platform=macOS'
+          ARCHS='arm64 x86_64' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_ALLOWED=NO build

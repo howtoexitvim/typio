@@ -57,7 +57,7 @@ Typio は「typo の終わり」を意味します。
 
 ## インストール
 
-一般ユーザーは `typio-<version>.pkg` をダウンロードして実行し、システム設定の「キーボード → 入力ソース」で Typio を有効化してください。
+一般ユーザーは `Typio-<version>.pkg` をダウンロードして実行し、システム設定の「キーボード → 入力ソース」で Typio を有効化してください。
 
 <div align="center">
   <img src="resources/images/readme/install-guide-1.png" alt="Allow applications from App Store & Known Developers" height="300" />
@@ -65,11 +65,13 @@ Typio は「typo の終わり」を意味します。
   <img src="resources/images/readme/install-guide-2.png" alt="Open typio-1.0.pkg anyway" height="300" />
 </div>
 
-通常はログアウト不要です。すぐに表示されない場合は、一度入力ソースを削除して再追加してください。それでも表示されない場合は、ログアウト後に再ログインしてください。
+Typio 1.1.2 は元の単一入力ソース構成に戻し、メニューバーとインライン切替で、T をくり抜いた円形アイコンを使用します。色は外観と選択状態に応じてシステムが調整します。1.1.1 の入力モード構成は、その後の再起動で切替の問題が生じたため削除しました。
+
+1.1.1 から更新する場合は、古い Typio を入力ソースから削除して再追加してください。古い項目やアイコンが残る場合は、ログアウト後に再ログインするか、macOS を再起動してください。
 
 ## ビルドとパッケージ
 
-`sh scripts/build.sh` でビルド、`sh scripts/build-and-install.sh` でローカル開発用インストール、`sh scripts/package-pkg.sh` で `dist/typio-<version>.pkg` を生成します。
+`bash scripts/build.sh` でビルド、`bash scripts/build-and-install.sh` でローカル開発用インストール、`bash scripts/package-pkg.sh` で `dist/Typio-<version>.pkg` を生成します。
 
 インストーラ署名が必要な場合は、パッケージ化前に `INSTALLER_SIGN_IDENTITY` を設定してください。
 
@@ -80,3 +82,9 @@ Typio はコミュニティのために作られています。もし役に立�
 ## プロジェクト
 
 Project home: https://github.com/howtoexitvim/Typio
+
+## License and credits
+
+Typio is a modified version of [HallelujahIM](https://github.com/dongyuwei/hallelujahIM) by Dong Yuwei and contributors, released under [GNU GPL v3](LICENSE). Typio modifications by Shuqi Wang, 2026, include the local-only engine, native settings, candidate panel layouts, branding, input-source icons, and installation flow.
+
+See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for dependency licenses and dictionary provenance, and [BUILDING.md](BUILDING.md) for building from source.

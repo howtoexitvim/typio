@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2F000001234567800000003 /* MARISA_COPYING.md in Resources */ = {isa = PBXBuildFile; fileRef = A2F000001234567800000013 /* MARISA_COPYING.md */; };
+		A2F000001234567800000002 /* THIRD_PARTY_NOTICES.md in Resources */ = {isa = PBXBuildFile; fileRef = A2F000001234567800000012 /* THIRD_PARTY_NOTICES.md */; };
+		A2F000001234567800000001 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A2F000001234567800000011 /* LICENSE */; };
+		0D29160819519CE500C4CE58 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D29160719519CE500C4CE58 /* AppKit.framework */; };
+		0DE74BFE1978EC6A00040F3C /* Typio.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 0DE74BFD1978EC6A00040F3C /* Typio.tiff */; };
+		0DE74C001978F18E00040F3C /* him.icns in Resources */ = {isa = PBXBuildFile; fileRef = 0DE74BFF1978F18E00040F3C /* him.icns */; };
+		3804D23720F2FC2A00CF1BD9 /* NSScreen+PointConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804D23520F2FC2A00CF1BD9 /* NSScreen+PointConversion.m */; };
+		3833665922DD6F45004BA2D1 /* TestConversionEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3833665822DD6F45004BA2D1 /* TestConversionEngine.mm */; };
+		386E1C0022DC5E9C000C6DCF /* ConversionEngine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 386E1BFF22DC5E9B000C6DCF /* ConversionEngine.mm */; };
+		389468D61F57C8CE00EF1F5E /* InputApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 389468D51F57C8CE00EF1F5E /* InputApplicationDelegate.m */; };
+		A2F100001234567800000001 /* TypioSettingsWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F100001234567800000003 /* TypioSettingsWindowController.m */; };
+		38A9EAC722CB424F003CCF52 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38A9EAC622CB424F003CCF52 /* Carbon.framework */; };
+		38DD401A1F5800A400A276CB /* PreferencesMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DD40191F5800A400A276CB /* PreferencesMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		8E90E6AE1DD558B60385D996 /* Pods_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4893615A9331202D81738ED2 /* Pods_Tests.framework */; };
+		A1F000001234567800000001 /* word_frequency.json in Resources */ = {isa = PBXBuildFile; fileRef = A1F000001234567800000002 /* word_frequency.json */; };
+		DCF77A16FF93189F6E0F9759 /* Pods_typio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FB0BF03D3169932092E2A73 /* Pods_typio.framework */; };
+		E93074B70A5C264700470842 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E93074B60A5C264700470842 /* InputMethodKit.framework */; };
+		F102C5A41F487D5A0005B03F /* libmarisa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F102C5A31F487D5A0005B03F /* libmarisa.a */; };
+		F102C5A61F487DE80005B03F /* google_227800_words.bin in Resources */ = {isa = PBXBuildFile; fileRef = F102C5A51F487DE80005B03F /* google_227800_words.bin */; };
+		F102C5AA1F4882C80005B03F /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = F102C5A91F4882C80005B03F /* main.mm */; };
+		F102C5AC1F4882D30005B03F /* InputController.mm in Sources */ = {isa = PBXBuildFile; fileRef = F102C5AB1F4882D30005B03F /* InputController.mm */; };
+		F109B4911E1A83AF00AA7A41 /* AnnotationWinController.m in Sources */ = {isa = PBXBuildFile; fileRef = F109B48F1E1A83AF00AA7A41 /* AnnotationWinController.m */; };
+		F1BF613D22D4DF6F003B946F /* AnnotationWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1BF613B22D4DF6F003B946F /* AnnotationWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3802CD7E22CE034100A7E2F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = typio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2F000001234567800000013 /* MARISA_COPYING.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = MARISA_COPYING.md; path = vendor/marisa-trie/COPYING.md; sourceTree = SOURCE_ROOT; };
+		A2F000001234567800000012 /* THIRD_PARTY_NOTICES.md */ = {isa = PBXFileReference; lastKnownFileType = text; name = THIRD_PARTY_NOTICES.md; path = THIRD_PARTY_NOTICES.md; sourceTree = SOURCE_ROOT; };
+		A2F000001234567800000011 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		0D29160719519CE500C4CE58 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0DE74BFD1978EC6A00040F3C /* Typio.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = resources/images/Typio.tiff; sourceTree = "<group>"; };
+		0DE74BFF1978F18E00040F3C /* him.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = resources/images/him.icns; sourceTree = "<group>"; };
+		0F9B2D528219BB1952DEBE74 /* Pods-typio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-typio/Pods-typio.debug.xcconfig"; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		3802CD7922CE034100A7E2F9 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3802CD7D22CE034100A7E2F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3804D23520F2FC2A00CF1BD9 /* NSScreen+PointConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSScreen+PointConversion.m"; path = "src/NSScreen+PointConversion.m"; sourceTree = "<group>"; };
+		3804D23620F2FC2A00CF1BD9 /* NSScreen+PointConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSScreen+PointConversion.h"; path = "src/NSScreen+PointConversion.h"; sourceTree = "<group>"; };
+		3833665822DD6F45004BA2D1 /* TestConversionEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestConversionEngine.mm; sourceTree = "<group>"; };
+		386E1BFC22DC5A54000C6DCF /* ConversionEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConversionEngine.h; path = src/ConversionEngine.h; sourceTree = "<group>"; };
+		386E1BFF22DC5E9B000C6DCF /* ConversionEngine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ConversionEngine.mm; path = src/ConversionEngine.mm; sourceTree = "<group>"; };
+		389468D41F57C8CE00EF1F5E /* InputApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputApplicationDelegate.h; path = src/InputApplicationDelegate.h; sourceTree = "<group>"; };
+		389468D51F57C8CE00EF1F5E /* InputApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputApplicationDelegate.m; path = src/InputApplicationDelegate.m; sourceTree = "<group>"; };
+		A2F100001234567800000002 /* TypioSettingsWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TypioSettingsWindowController.h; path = src/TypioSettingsWindowController.h; sourceTree = "<group>"; };
+		A2F100001234567800000003 /* TypioSettingsWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TypioSettingsWindowController.m; path = src/TypioSettingsWindowController.m; sourceTree = "<group>"; };
+		38A9EAC522CB4136003CCF52 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = resources/lproj/en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		38A9EAC622CB424F003CCF52 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		38DD40191F5800A400A276CB /* PreferencesMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = resources/PreferencesMenu.xib; sourceTree = "<group>"; };
+		4893615A9331202D81738ED2 /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FB0BF03D3169932092E2A73 /* Pods_typio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_typio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = resources/Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* typio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = typio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F000001234567800000002 /* word_frequency.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = word_frequency.json; path = resources/dictionary/word_frequency.json; sourceTree = "<group>"; };
+		A9D7E75BEAC2280E777E4B6F /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C821F631E5B6762735CA76CB /* Pods-typio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-typio.release.xcconfig"; path = "Pods/Target Support Files/Pods-typio/Pods-typio.release.xcconfig"; sourceTree = "<group>"; };
+		C82BE1A7E1A45D2695354D87 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E93074B60A5C264700470842 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = /System/Library/Frameworks/InputMethodKit.framework; sourceTree = "<absolute>"; };
+		F102C5A31F487D5A0005B03F /* libmarisa.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmarisa.a; path = vendor/marisa-trie/lib/libmarisa.a; sourceTree = "<group>"; };
+		F102C5A51F487DE80005B03F /* google_227800_words.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = google_227800_words.bin; path = resources/dictionary/google_227800_words.bin; sourceTree = "<group>"; };
+		F102C5A91F4882C80005B03F /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = "<group>"; };
+		F102C5AB1F4882D30005B03F /* InputController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = InputController.mm; path = src/InputController.mm; sourceTree = "<group>"; };
+		F109B48F1E1A83AF00AA7A41 /* AnnotationWinController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnnotationWinController.m; path = src/AnnotationWinController.m; sourceTree = "<group>"; };
+		F109B4901E1A83AF00AA7A41 /* AnnotationWinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnnotationWinController.h; path = src/AnnotationWinController.h; sourceTree = "<group>"; };
+		F1BF613C22D4DF6F003B946F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = resources/lproj/Base.lproj/AnnotationWindow.xib; sourceTree = "<group>"; };
+		F1CDA2A41B55180A005086C6 /* InputController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputController.h; path = src/InputController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3802CD7622CE034100A7E2F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E90E6AE1DD558B60385D996 /* Pods_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38A9EAC722CB424F003CCF52 /* Carbon.framework in Frameworks */,
+				F102C5A41F487D5A0005B03F /* libmarisa.a in Frameworks */,
+				0D29160819519CE500C4CE58 /* AppKit.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				E93074B70A5C264700470842 /* InputMethodKit.framework in Frameworks */,
+				DCF77A16FF93189F6E0F9759 /* Pods_typio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				386E1BFC22DC5A54000C6DCF /* ConversionEngine.h */,
+				386E1BFF22DC5E9B000C6DCF /* ConversionEngine.mm */,
+				A2F100001234567800000002 /* TypioSettingsWindowController.h */,
+				A2F100001234567800000003 /* TypioSettingsWindowController.m */,
+				389468D41F57C8CE00EF1F5E /* InputApplicationDelegate.h */,
+				389468D51F57C8CE00EF1F5E /* InputApplicationDelegate.m */,
+				F102C5A91F4882C80005B03F /* main.mm */,
+				F1CDA2A41B55180A005086C6 /* InputController.h */,
+				F102C5AB1F4882D30005B03F /* InputController.mm */,
+				F109B4901E1A83AF00AA7A41 /* AnnotationWinController.h */,
+				F109B48F1E1A83AF00AA7A41 /* AnnotationWinController.m */,
+				3804D23620F2FC2A00CF1BD9 /* NSScreen+PointConversion.h */,
+				3804D23520F2FC2A00CF1BD9 /* NSScreen+PointConversion.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E93074B60A5C264700470842 /* InputMethodKit.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* typio.app */,
+				3802CD7922CE034100A7E2F9 /* Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				3802CD7A22CE034100A7E2F9 /* Tests */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				5D7EC79F78453C417C575DC0 /* Pods */,
+			);
+			name = NumberInput;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1BF613B22D4DF6F003B946F /* AnnotationWindow.xib */,
+				38DD40191F5800A400A276CB /* PreferencesMenu.xib */,
+				F102C5A51F487DE80005B03F /* google_227800_words.bin */,
+				A1F000001234567800000002 /* word_frequency.json */,
+				E93396E20A9A0AAD0073E6C4 /* images */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38A9EAC622CB424F003CCF52 /* Carbon.framework */,
+				F102C5A31F487D5A0005B03F /* libmarisa.a */,
+				0D29160719519CE500C4CE58 /* AppKit.framework */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+				5FB0BF03D3169932092E2A73 /* Pods_typio.framework */,
+				4893615A9331202D81738ED2 /* Pods_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3802CD7A22CE034100A7E2F9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3833665822DD6F45004BA2D1 /* TestConversionEngine.mm */,
+				3802CD7D22CE034100A7E2F9 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		5D7EC79F78453C417C575DC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F9B2D528219BB1952DEBE74 /* Pods-typio.debug.xcconfig */,
+				C821F631E5B6762735CA76CB /* Pods-typio.release.xcconfig */,
+				C82BE1A7E1A45D2695354D87 /* Pods-Tests.debug.xcconfig */,
+				A9D7E75BEAC2280E777E4B6F /* Pods-Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E93396E20A9A0AAD0073E6C4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0DE74BFF1978F18E00040F3C /* him.icns */,
+				0DE74BFD1978EC6A00040F3C /* Typio.tiff */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3802CD7822CE034100A7E2F9 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3802CD8222CE034100A7E2F9 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				D499D34DB6B1C712EF74E067 /* [CP] Check Pods Manifest.lock */,
+				3802CD7522CE034100A7E2F9 /* Sources */,
+				3802CD7622CE034100A7E2F9 /* Frameworks */,
+				3802CD7722CE034100A7E2F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3802CD7F22CE034100A7E2F9 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 3802CD7922CE034100A7E2F9 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D1107260486CEB800E47090 /* typio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "typio" */;
+			buildPhases = (
+				E76BAAB332AD8608D185D1F3 /* [CP] Check Pods Manifest.lock */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = typio;
+			productInstallPath = "$(HOME)/Applications";
+			productName = NumberInput;
+			productReference = 8D1107320486CEB800E47090 /* typio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				TargetAttributes = {
+					3802CD7822CE034100A7E2F9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						ProvisioningStyle = Manual;
+						TestTargetID = 8D1107260486CEB800E47090;
+					};
+				};
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "typio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* typio */,
+				3802CD7822CE034100A7E2F9 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3802CD7722CE034100A7E2F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1BF613D22D4DF6F003B946F /* AnnotationWindow.xib in Resources */,
+				0DE74BFE1978EC6A00040F3C /* Typio.tiff in Resources */,
+				A2F000001234567800000003 /* MARISA_COPYING.md in Resources */,
+				A2F000001234567800000002 /* THIRD_PARTY_NOTICES.md in Resources */,
+				A2F000001234567800000001 /* LICENSE in Resources */,
+				F102C5A61F487DE80005B03F /* google_227800_words.bin in Resources */,
+				A1F000001234567800000001 /* word_frequency.json in Resources */,
+				38DD401A1F5800A400A276CB /* PreferencesMenu.xib in Resources */,
+				0DE74C001978F18E00040F3C /* him.icns in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D499D34DB6B1C712EF74E067 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E76BAAB332AD8608D185D1F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-typio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3802CD7522CE034100A7E2F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3833665922DD6F45004BA2D1 /* TestConversionEngine.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2F100001234567800000001 /* TypioSettingsWindowController.m in Sources */,
+				F102C5AA1F4882C80005B03F /* main.mm in Sources */,
+				3804D23720F2FC2A00CF1BD9 /* NSScreen+PointConversion.m in Sources */,
+				389468D61F57C8CE00EF1F5E /* InputApplicationDelegate.m in Sources */,
+				F102C5AC1F4882D30005B03F /* InputController.mm in Sources */,
+				F109B4911E1A83AF00AA7A41 /* AnnotationWinController.m in Sources */,
+				386E1C0022DC5E9C000C6DCF /* ConversionEngine.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3802CD7F22CE034100A7E2F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* typio */;
+			targetProxy = 3802CD7E22CE034100A7E2F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				38A9EAC522CB4136003CCF52 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F1BF613B22D4DF6F003B946F /* AnnotationWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1BF613C22D4DF6F003B946F /* Base */,
+			);
+			name = AnnotationWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3802CD8022CE034100A7E2F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82BE1A7E1A45D2695354D87 /* Pods-Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					$SOURCE_ROOT/vendor/marisa-trie/include,
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = top.shuqihere.typio.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/typio.app/Contents/MacOS/typio";
+			};
+			name = Debug;
+		};
+		3802CD8122CE034100A7E2F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D7E75BEAC2280E777E4B6F /* Pods-Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					$SOURCE_ROOT/vendor/marisa-trie/include,
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = top.shuqihere.typio.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/typio.app/Contents/MacOS/typio";
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F9B2D528219BB1952DEBE74 /* Pods-typio.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				"HEADER_SEARCH_PATHS[arch=*]" = $SOURCE_ROOT/vendor/marisa-trie/include;
+				INFOPLIST_FILE = resources/Info.plist;
+				INSTALL_PATH = "\"$(LOCAL_LIBRARY_DIR)/Input Methods/\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor/marisa-trie/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = top.shuqihere.inputmethod.typio;
+				PRODUCT_NAME = Typio;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "\"${PODS_ROOT}/\"/**";
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C821F631E5B6762735CA76CB /* Pods-typio.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				"HEADER_SEARCH_PATHS[arch=*]" = $SOURCE_ROOT/vendor/marisa-trie/include;
+				INFOPLIST_FILE = resources/Info.plist;
+				INSTALL_PATH = "\"$(LOCAL_LIBRARY_DIR)/Input Methods/\"";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/vendor/marisa-trie/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = top.shuqihere.inputmethod.typio;
+				PRODUCT_NAME = Typio;
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "\"${PODS_ROOT}/\"/**";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3802CD8222CE034100A7E2F9 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3802CD8022CE034100A7E2F9 /* Debug */,
+				3802CD8122CE034100A7E2F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "typio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "typio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

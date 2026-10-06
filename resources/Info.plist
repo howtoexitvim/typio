@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Typio</string>
+	<key>CFBundleIconFile</key>
+	<string>him.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Typio</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.2</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.1.2</string>
+	<key>InputMethodConnectionName</key>
+	<string>Typio_1_Connection</string>
+	<key>InputMethodServerControllerClass</key>
+	<string>InputController</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.productivity</string>
+	<key>LSBackgroundOnly</key>
+	<string>NO</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSMainNibFile</key>
+	<string>AnnotationWindow</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>TICapsLockLanguageSwitchCapable</key>
+	<true/>
+	<key>TISIconIsTemplate</key>
+	<true/>
+	<key>TISIntendedLanguage</key>
+	<string>en</string>
+	<key>tsInputMethodCharacterRepertoireKey</key>
+	<array>
+		<string>en</string>
+	</array>
+	<key>tsInputMethodIconFileKey</key>
+	<string>Typio.tiff</string>
+</dict>
+</plist>

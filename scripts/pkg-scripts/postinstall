@@ -1,0 +1,36 @@
+#!/bin/bash
+set -euo pipefail
+
+APP_NAME="Typio"
+INSTALL_DIR="/Library/Input Methods"
+APP_BIN="${INSTALL_DIR}/${APP_NAME}.app/Contents/MacOS/${APP_NAME}"
+
+run_install_for_console_user() {
+  local console_user console_uid
+  console_user="$(stat -f%Su /dev/console 2>/dev/null || true)"
+
+  if [[ -z "${console_user}" || "${console_user}" == "root" || "${console_user}" == "loginwindow" ]]; then
+    return 1
+  fi
+
+  console_uid="$(id -u "${console_user}" 2>/dev/null || true)"
+  if [[ -z "${console_uid}" ]]; then
+    return 1
+  fi
+
+  launchctl asuser "${console_uid}" sudo -u "${console_user}" "${APP_BIN}" --install
+}
+
+pkill -x Typio || true
+
+if [[ -x "${APP_BIN}" ]]; then
+  # Input source preferences belong to the logged-in user, never root.
+  if ! run_install_for_console_user; then
+    echo "Typio is installed. Add it in System Settings > Keyboard > Input Sources."
+    echo "If it is unavailable or shows a cached icon, log out and back in or restart macOS."
+  fi
+fi
+
+killall TextInputMenuAgent || true
+
+exit 0
